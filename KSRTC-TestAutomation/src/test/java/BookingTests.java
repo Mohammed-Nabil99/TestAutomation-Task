@@ -10,7 +10,7 @@ public class BookingTests extends BaseTests{
     public void testSearchingTrip() throws InterruptedException {
         homePage.selectDeparture("Chikkamagaluru");
         homePage.selectDestination("Bengaluru");
-        homePage.setDepartureDate("27","9","2024");
+        homePage.setDepartureDate("4","10","2024");
         var bookingPage=homePage.clickSearchBuses();
         String actualResult=bookingPage.getResultTxt();
         String expectedResult="Chikkamagaluru";
@@ -26,7 +26,7 @@ public class BookingTests extends BaseTests{
     public void testValidCustomerDetails(String MobileNum, String email) throws InterruptedException {
         homePage.selectDeparture("Chikkamagaluru");
         homePage.selectDestination("Bengaluru");
-        homePage.setDepartureDate("27","9","2024");
+        homePage.setDepartureDate("4","10","2024");
         var bookingPage=homePage.clickSearchBuses();
         bookingPage.clickSelectSeats();
         bookingPage.selectSeat();
@@ -41,7 +41,7 @@ public class BookingTests extends BaseTests{
     public void testCheckout() throws InterruptedException {
         homePage.selectDeparture("Chikkamagaluru");
         homePage.selectDestination("Bengaluru");
-        homePage.setDepartureDate("27","9","2024");
+        homePage.setDepartureDate("4","10","2024");
         var bookingPage=homePage.clickSearchBuses();
         bookingPage.clickSelectSeats();
         bookingPage.selectSeat();
